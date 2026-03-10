@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Islemleri</title>
+</head>
+<body>
+    <div style="height: auto;
+    width: 400px;
+    color: indigo;
+    border: 2px solid black;
+    padding: 25px;
+    background:azure;"><!-- ilk satırda kutunun yüksekliğini otomatik yaptım.
+    ikinci satırda genişliğini 400px yaptım.
+    üçüncü satırda başlığın rengini mor yaptım.
+    dördüncü satırda kenarlığını 2px, rengini siyah yaptım.
+    beşinci satırda iç boşluğunu 25px yaptım.
+    altıncı satırda arka planı beyaz yaptım.-->
+    <h3> Üyelik Bilgileri</h3><!-- Üst başlığını Üyelik Bilgileri yaptım.-->
+    <form action="kayit.php"><!-- Action etiketinde yaptığım programın gideceği sayfayı kayit.php yaptım.-->
+        <label> Ad Soyad:</label><!--kullanıcı görsün diye ad soyad ibaresini veren bi yazı oluşturdum. -->
+        <input type="text" name="adSoyad" class="form-control"><!-- giriş tipini text, name ni yani arka planda gözüken bilgiyi
+        adsoyad, sınıfını form-control yaptım.-->
+        <label> e-Posta:</label><!-- e posta ibaresini veren metni oluşturdum.-->
+        <input type="email" name="ePosta" class="form-control"><!-- giriş tipini e mail, name ni e posta, sınıfını form-control yaptım.-->
+        <label> Doğum Tarihi:</label><!-- dogum tarihi ibaresini veren metni oluşturdum.-->
+         <input type="date" name="dogumTarihi" class="form-control"><br><!-- giriş tipini date yani tarih, name ni dogum tarihi
+         sınıfını form-control yaptım.-->
+         <input type="submit" value="Gönder" class="  btn btn-primary btn-block"/><br><!-- bu kısımda button oluturacağım için 
+         giriş tipini submit yaptım çünkü bilgileri göndermek için üstündeki yazıyı gönder, sınıfını btn primary yaotım.-->
+         <input type="reset" value="temizle" class="btn btn-primary btn-block"/><!-- burada gönderilen bellejten temizlemek için 
+         reset. buttonun üstündeki yazıyı temizle, sınıfını btn primary yaptım.-->
+    </form>
+</div>
+</body>
+</html>
